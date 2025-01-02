@@ -8,7 +8,7 @@ const Displayusers = () => {
    // Fetch all users from the backend
    const getall = async () => {
      try {
-       const response = await fetch('http://localhost:3001/api/users');
+       const response = await fetch('http://localhost:3000/api/users');
        
        // Check if the response is OK
        if (!response.ok) {
@@ -39,7 +39,6 @@ const Displayusers = () => {
            <div key={index}>
              <h3>{user.username}</h3>
              <p>{user.email}</p>
-             <p>good</p>
            </div>
          ))}
        </div>
